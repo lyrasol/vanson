@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系国际展会服务平台 - 获取参展咨询、展位预订及合作洽谈，专业团队为您提供一站式国际展会解决方案">
+  <meta name="keywords" content="国际展会联系，展会咨询，展位预订，参展申请，国际展览服务，中山古镇展会，展会合作">
+  <title>联系我们 - 国际展会服务平台 </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      important: true,
+      theme: {
+        extend: {
+          colors: {
+            warm: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            clay: '#c2410c',
+            sand: '#fafaf9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #fafaf9; color: #451a03; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    .input-field { transition: all 0.3s ease; }
+    .input-field:focus { ring: 2px; ring-color: #d97706; border-color: #d97706; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- 圆形悬浮导航图标 -->
+  <div class="nav-icon-trigger" id="navTrigger">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </div>
+
+  <!-- 全屏圆形网格菜单 -->
+  <nav class="circle-nav-menu" id="circleNavMenu">
+    <div class="nav-close-btn" id="navCloseBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+    
+    <div class="circle-nav-grid">
+      <a href="index.html" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        <span>首页</span>
+      </a>
+      <a href="https://www.ws-expo.com/lighting/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <span>照明灯饰展</span>
+      </a>
+      <a href="https://www.ws-expo.com/electron/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        <span>电子产品展</span>
+      </a>
+      <a href="https://www.ws-expo.com/energy/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>绿色能源展</span>
+      </a>
+      <a href="https://www.ws-expo.com/schedule/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <span>展览计划表</span>
+      </a>
+      <a href="https://www.ws-expo.com/sense/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <span>参展常识</span>
+      </a>
+      <a href="https://www.ws-expo.com/visa/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+        <span>签证办理</span>
+      </a>
+      <a href="https://www.ws-expo.com/exponews/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+        <span>展会新闻</span>
+      </a>
+      <a href="about.html" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>关于我们</span>
+      </a>
+      <a href="contact.html" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span>联系我们</span>
+      </a>
+      <a href="https://www.ws-expo.com/order/" target="_blank" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        <span>参展申请</span>
+      </a>
+      <a href="news.html" class="circle-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+        <span>行业动态</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- 头部视觉区：温暖色调 -->
+  <section class="relative bg-warm-50 py-20 overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-warm-200 opacity-30 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-clay opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+    
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <span class="inline-block py-1 px-4 border border-warm-300 rounded-full text-warm-700 text-sm tracking-widest mb-4 bg-white/50">GET IN TOUCH</span>
+      <h1 class="text-5xl md:text-6xl font-bold text-warm-900 mb-6">开启您的<a href="https://www.ws-expo.com" target="_blank" class="text-clay underline decoration-warm-300 underline-offset-4 hover:text-warm-600 transition-colors">国际展会</a>之旅</h1>
+      <p class="text-xl text-warm-700 max-w-2xl mx-auto leading-relaxed">
+        无论您是寻求参展机会还是参观交流，我们的专业团队随时为您提供支持。
+      </p>
+    </div>
+  </section>
+
+  <main class="container mx-auto px-4 py-16 -mt-10 relative z-20">
+    <div class="grid lg:grid-cols-12 gap-12">
+      
+      <!-- 左侧：联系信息与卡片 -->
+      <div class="lg:col-span-5 space-y-8">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-warm-100">
+          <h2 class="text-2xl font-serif font-bold text-warm-900 mb-6">联系方式</h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 group">
+              <div class="w-12 h-12 bg-warm-100 rounded-full flex items-center justify-center text-warm-600 group-hover:bg-warm-500 group-hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-warm-900">办公地址</h3>
+                <p class="text-warm-700 mt-1">中国广东省中山古镇国际展览中心</p>
+                <p class="text-sm text-warm-500 mt-1">邮编：528421</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 group">
+              <div class="w-12 h-12 bg-warm-100 rounded-full flex items-center justify-center text-warm-600 group-hover:bg-warm-500 group-hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-warm-900">联系电话</h3>
+                <p class="text-warm-700 mt-1">咨询热线：<a href="tel:400-006-2327" class="hover:text-clay font-semibold">400-006-2327</a></p>
+                <p class="text-warm-700">传真：0760-85333-881</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 group">
+              <div class="w-12 h-12 bg-warm-100 rounded-full flex items-center justify-center text-warm-600 group-hover:bg-warm-500 group-hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-warm-900">电子邮箱</h3>
+                <p class="text-warm-700 mt-1">业务咨询：<a href="mailto:fair@ws-expo.com" class="hover:text-clay">fair@ws-expo.com</a></p>
+                <p class="text-warm-700">客户服务：<a href="mailto:win@ws-expo.com" class="hover:text-clay">win@ws-expo.com</a></p>
+              </div>
+            </div>
+            
+            <div class="pt-6 border-t border-warm-100">
+               <h3 class="font-bold text-warm-900 mb-3">更多服务资源</h3>
+               <div class="space-y-2">
+                 <a href="https://www.ws-expo.com/advertisement/" target="_blank" class="block text-sm text-warm-700 hover:text-clay transition-colors">🎨 标识广告专题</a>
+                 <a href="https://www.ws-expo.com/furniture/" target="_blank" class="block text-sm text-warm-700 hover:text-clay transition-colors">🏠 电器用品展</a>
+                 <a href="https://www.ws-expo.com/passport/" target="_blank" class="block text-sm text-warm-700 hover:text-clay transition-colors">📘 护照知识</a>
+                 <a href="https://www.ws-expo.com/report/" target="_blank" class="block text-sm text-warm-700 hover:text-clay transition-colors">📊 市场报告</a>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 地图占位 -->
+        <div class="bg-warm-100 rounded-2xl h-64 flex items-center justify-center relative overflow-hidden group">
+           <img src="https://hpi-hub.tos-cn-beijing.volces.com/static/batch_14/1757441944824-1323.png" alt="地图示意" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+           <div class="relative z-10 bg-white/90 backdrop-blur px-6 py-3 rounded-xl shadow-lg text-warm-900 font-bold">
+             📍 中山古镇国际展览中心
+           </div>
+        </div>
+      </div>
+
+      <!-- 右侧：咨询表单 -->
+      <div class="lg:col-span-7">
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-warm-100 h-full">
+          <h2 class="text-3xl font-serif font-bold text-warm-900 mb-2">在线咨询</h2>
+          <p class="text-warm-600 mb-8">填写以下表格，我们的<a href="https://www.ws-expo.com" class="underline hover:text-clay">国际展会</a>专家将在 24 小时内与您联系。</p>
+          
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold text-warm-800 mb-2">您的姓名 <span class="text-clay">*</span></label>
+                <input type="text" required class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all" placeholder="请输入姓名">
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-warm-800 mb-2">公司名称</label>
+                <input type="text" class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all" placeholder="请输入公司全称">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold text-warm-800 mb-2">联系电话 <span class="text-clay">*</span></label>
+                <input type="tel" required class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all" placeholder="请输入手机号码">
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-warm-800 mb-2">电子邮箱 <span class="text-clay">*</span></label>
+                <input type="email" required class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all" placeholder="example@company.com">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-warm-800 mb-2">咨询类型</label>
+              <select class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all appearance-none cursor-pointer">
+                <option value="">请选择您感兴趣的服务</option>
+                <option value="exhibit">国际展会参展报名</option>
+                <option value="visit">专业观众参观咨询</option>
+                <option value="booth">展位设计与搭建</option>
+                <option value="sponsor">广告赞助与合作</option>
+                <option value="media">媒体采访与报道</option>
+                <option value="other">其他事项</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-warm-800 mb-2">留言内容 <span class="text-clay">*</span></label>
+              <textarea required rows="5" class="input-field w-full px-4 py-3 rounded-xl bg-warm-50 border border-warm-200 focus:bg-white focus:ring-2 focus:ring-warm-400 outline-none transition-all resize-none" placeholder="请详细描述您的需求，例如：希望了解 2026 年春季国际展会的展位价格..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-warm-500 to-clay text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:from-warm-600 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 text-lg">
+              提交咨询信息
+            </button>
+            <p class="text-xs text-center text-warm-500 mt-4">
+              提交即表示您同意我们的隐私政策。我们将严格保护您的个人信息安全。
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚：深色温暖风格 -->
+  <footer class="bg-warm-900 text-warm-100 py-16 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 bg-warm-500 rounded flex items-center justify-center text-white font-serif font-bold">IE</div>
+            <span class="text-xl font-serif font-bold text-white">国际展会</span>
+          </div>
+          <p class="text-warm-200/70 text-sm leading-relaxed mb-6">
+            致力于为全球企业提供卓越的展览服务，连接商业机遇，推动产业创新。
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-warm-500 transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-warm-500 transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-6">快速链接</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="hover:text-warm-400 transition-colors">首页</a></li>
+            <li><a href="about.html" class="hover:text-warm-400 transition-colors">关于我们</a></li>
+            <li><a href="news.html" class="hover:text-warm-400 transition-colors">新闻动态</a></li>
+            <li><a href="details.html" class="hover:text-warm-400 transition-colors">展会详情</a></li>
+            <li><a href="contact.html" class="text-warm-400 font-semibold">联系我们</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">国际展会</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.ws-expo.com/lighting/" target="_blank" class="hover:text-warm-400 transition-colors">照明灯饰展</a></li>
+            <li><a href="https://www.ws-expo.com/electron/" target="_blank" class="hover:text-warm-400 transition-colors">电子产品展</a></li>
+            <li><a href="https://www.ws-expo.com/energy/" target="_blank" class="hover:text-warm-400 transition-colors">绿色能源展</a></li>
+            <li><a href="https://www.ws-expo.com/advertisement/" target="_blank" class="hover:text-warm-400 transition-colors">标识广告展</a></li>
+            <li><a href="https://www.ws-expo.com/international/" target="_blank" class="hover:text-warm-400 transition-colors">其他国际展</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">国内展会</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.ws-expo.com/domlighting/" target="_blank" class="hover:text-warm-400 transition-colors">国内照明展</a></li>
+            <li><a href="https://www.ws-expo.com/domelectron/" target="_blank" class="hover:text-warm-400 transition-colors">国内电子展</a></li>
+            <li><a href="https://www.ws-expo.com/domother/" target="_blank" class="hover:text-warm-400 transition-colors">其他展览会</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">资讯服务</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.ws-expo.com/trends/" target="_blank" class="hover:text-warm-400 transition-colors">公司动态</a></li>
+            <li><a href="https://www.ws-expo.com/activity/" target="_blank" class="hover:text-warm-400 transition-colors">展商活动</a></li>
+            <li><a href="https://www.ws-expo.com/exhibition/" target="_blank" class="hover:text-warm-400 transition-colors">资讯中心</a></li>
+            <li><a href="https://www.ws-expo.com/ask/" target="_blank" class="hover:text-warm-400 transition-colors">参展百问</a></li>
+            <li><a href="https://www.ws-expo.com/tool/down.html" target="_blank" class="hover:text-warm-400 transition-colors">工具下载</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">联系方式</h4>
+          <ul class="space-y-3 text-sm text-warm-200/80">
+            <li class="flex items-start"><span class="mr-2">📍</span> 中国广东省中山古镇国际展览中心</li>
+            <li class="flex items-center"><span class="mr-2">📞</span> <a href="tel:400-006-2327" class="hover:text-white transition-colors">400-006-2327</a></li>
+            <li class="flex items-center"><span class="mr-2">📠</span> 0760-85333-881</li>
+            <li class="flex items-center"><span class="mr-2">✉️</span> <a href="mailto:fair@ws-expo.com" class="hover:text-white transition-colors">fair@ws-expo.com</a></li>
+            <li class="pt-2"><a href="https://www.ws-expo.com" target="_blank" class="text-warm-400 hover:text-white transition-colors font-semibold">www.ws-expo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-warm-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-warm-300/60">
+        <p>&copy; 2026 万盛展览<a href="https://www.ws-expo.com" target="_blank" class="text-warm-400 hover:text-white transition-colors">国际展会</a>服务平台 版权所有</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="index.html" class="hover:text-warm-400 transition-colors">首页</a>
+          <span class="text-warm-800">|</span>
+          <a href="about.html" class="hover:text-warm-400 transition-colors">关于</a>
+          <span class="text-warm-800">|</span>
+          <a href="news.html" class="hover:text-warm-400 transition-colors">新闻</a>
+          <span class="text-warm-800">|</span>
+          <a href="details.html" class="hover:text-warm-400 transition-colors">展会</a>
+          <span class="text-warm-800">|</span>
+          <a href="contact.html" class="hover:text-warm-400 transition-colors">联系</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 圆形导航菜单交互
+    const navTrigger = document.getElementById('navTrigger');
+    const circleNavMenu = document.getElementById('circleNavMenu');
+    const navCloseBtn = document.getElementById('navCloseBtn');
+    
+    navTrigger.addEventListener('click', () => {
+      circleNavMenu.classList.add('active');
+    });
+    
+    navCloseBtn.addEventListener('click', () => {
+      circleNavMenu.classList.remove('active');
+    });
+    
+    // 点击菜单背景关闭
+    circleNavMenu.addEventListener('click', (e) => {
+      if (e.target === circleNavMenu) {
+        circleNavMenu.classList.remove('active');
+      }
+    });
+
+    const contactForm = document.getElementById('contactForm');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputs = contactForm.querySelectorAll('input, select, textarea');
+      let isValid = true;
+      let formData = {};
+
+      inputs.forEach(input => {
+        if (input.hasAttribute('required') && !input.value.trim()) {
+          isValid = false;
+          input.classList.add('border-red-500', 'ring-1', 'ring-red-500');
+        } else {
+          input.classList.remove('border-red-500', 'ring-1', 'ring-red-500');
+          formData[input.previousElementSibling?.innerText || input.id] = input.value;
+        }
+      });
+
+      if (!isValid) {
+        alert('请填写所有必填项（标有 * 号）');
+        return;
+      }
+
+      // 模拟提交成功
+      const btn = contactForm.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerText = '提交成功！';
+      btn.classList.add('bg-green-600', 'from-green-600', 'to-green-700');
+      
+      setTimeout(() => {
+        alert(`感谢您的咨询！\n\n我们已收到您的信息，专业团队将尽快通过您留下的联系方式与您沟通。\n\n您也可以直接访问官网 https://www.ws-expo.com 获取更多即时资讯。`);
+        contactForm.reset();
+        btn.innerText = originalText;
+        btn.classList.remove('bg-green-600', 'from-green-600', 'to-green-700');
+      }, 500);
+    });
+  </script>
+</body>
+</html>
